@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+body{
+    background-color: #0F0F0F;
+}
+nav{
+    background-color: #2C2C2C;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    color: #F7374F;
+}
+nav .heading span{
+    font-size: 25px;
+    color: #FFF;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+/* Button */
+.add button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background: #88304E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+.add button span{
+    margin-right: 5px;
+}
+.add button:hover {
+    background: #301E67;
+}
+.cards{
+    padding: 1rem;
+    /* background-color: #45a049; */
+}
+
+
+.book-card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 20px auto 40px auto;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.book-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+}
+
+.book-details p {
+    margin: 3px 0;
+    color: #555;
+}
+.book-details p strong{
+    font-weight: 700;
+    color: #0F0F0F;
+}
+.book-details label {
+    display: block;
+    margin: 6px 0 4px;
+    font-weight: bold;
+  }
+  
+  .book-details select {
+    width: 60%;
+    padding: 3px 5px;
+    margin-bottom: 5px;
+  }
+  
+.remove-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: crimson;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.remove-btn:hover {
+    background: darkred;
+}
+
+/* Dialog form styling */
+dialog {
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+dialog .cross{
+    display: flex;
+    justify-content: flex-end;
+}
+dialog .cross span{
+    cursor: pointer;
+}
+dialog h2{
+    margin-bottom: 1rem;
+}
+dialog label{
+    font-size: 15px;
+    padding: 1rem 0;
+}
+
+dialog .options{
+    margin-top: 1rem;
+}
+dialog .options{
+    padding: 5px;
+}
+dialog input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+dialog input:focus{
+    box-shadow: 0 0 10px rgb(167, 5, 5);
+}
+dialog form button {
+    margin-top: 2rem;
+    background: #0F0F0F;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+dialog form button:hover {
+    background: #88304E;
+    cursor: pointer;
+}
+::backdrop{
+    backdrop-filter: blur(10px);
+}
