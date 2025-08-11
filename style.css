@@ -53,7 +53,6 @@ nav .heading span{
 }
 .cards{
     padding: 1rem;
-    /* background-color: #45a049; */
 }
 
 
@@ -154,10 +153,10 @@ dialog label{
 
 dialog .options{
     margin-top: 1rem;
-}
-dialog .options{
     padding: 5px;
+    border: 1px solid #0F0F0F;
 }
+
 dialog input {
     width: 100%;
     padding: 8px;
